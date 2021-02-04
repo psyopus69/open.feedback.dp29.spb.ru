@@ -1,0 +1,54 @@
+@use "sass:map";
+
+@media only screen and (max-width: 650px) {
+  :global(.count_reviews){
+    padding: 5px 0px 5px 10px!important;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  :global(body){
+    font-size: 0.935em;
+    :global(.ankVers){
+      font-size: 0.26em;
+    }
+    :global(.error_check_msg){
+      //font-size: 0.4em;
+      width:75%!important;
+      left: 20%!important;
+    }
+    :global(textarea){
+      min-width: 100px!important;
+    }
+  }
+}
+
+@media only screen and (min-width: 888px) {
+  :global(body){
+    font-size: 1.725em;
+    :global(.successPageCounter){
+      width: 800px;
+    }
+    :global(.questValDiv){
+      width: 800px;
+      margin: auto!important;
+    }
+    :global(.radioDivQs){
+      width: 800px;
+      margin: auto auto auto 10px !important;
+    }
+    :global(.feedbackForm){
+      width:800px;
+      margin:auto;
+    }
+    :global(.successPageText){
+      min-width:800px;
+      width: 80%!important;
+      margin:auto!important;
+    }
+    :global(.successPageCounter){
+      width:800px;
+      margin:auto;
+    }
+    }
+  }

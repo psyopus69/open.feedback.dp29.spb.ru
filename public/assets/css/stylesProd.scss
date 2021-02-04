@@ -1,0 +1,218 @@
+@import './constants.scss';
+
+body{
+  font-size: 1.425em;
+  margin:0;
+  width:100%;
+  :global(.successPage){
+    :global(.successPageText){
+      background: green;
+      color: white;
+      text-align: center;
+      width: 96%;
+      margin-left: 2%;
+    }
+    :global(.successPageCounter){
+      :global(.count_reviews){
+        background: #ccffb3;
+        width: 90%;
+        margin-left: 5%;
+        padding: 15px 5px 10px 25px;
+        color: #0a3826;
+      }
+    }
+  }
+  :global(.button_getLink){
+    //     background: adjust-hue($generator-background-color, 120deg);
+    margin: 5px;
+    padding: 5px;
+    &:hover{
+      background: rgb(172 195 234);
+      cursor: pointer;
+    }
+  }
+  :global(.generatorPage){
+    background: $generator-background-color;
+    color: white;
+    :global(.qrGen){
+      padding: 15px;
+      background: white;
+      color: black;
+    }
+    :global(#QrGenerator){
+
+    }
+    :global(.generatorForm) {
+      background: adjust-hue($generator-background-color, 60deg);
+    }
+    :global(.anks, .docs){
+      background: adjust-hue($generator-background-color, -60deg);
+    }
+    :global(.forLink){
+      background: rgb(64 97 152);
+    }
+  }
+  :global(.pageStatistic){
+    color: white;
+    background: #1e365e;
+    :global(.admPanel_stat){
+      background: #1e365e;
+    }
+    :global(.statParams){
+      background: #1028504d;
+    }
+    :global(.statAnkDiv){
+      :global(.selfAnkStatistic){
+        background: #152b50;
+        margin-bottom: 45px;
+        margin-top: 45px;
+        &:first-child{
+          margin-top: 15px;
+        }
+        :global(.ankNum){
+          background: #0c1e3c;
+          margin-bottom: 5px;
+        }
+      }
+    }
+    :global(.radioDivQs){
+           background: #00000014;
+            margin-bottom: 15px;
+           :global(.radioDivQ){
+         //    background: rgb(34 165 53 / 39%);
+           }
+         }
+  }
+  :global(.mainAnk){
+    background: #02105de0;
+    color: white;
+    :global(.userdataMainDiv){
+      :global(.userdataLogoText){
+        background: #172156;
+        width: fit-content;
+        margin: auto;
+        padding: 5px 15px 3px 15px;
+        border-radius: 5px 5px 0 0;
+      }
+      :global(.userInput){
+        background: #1b255f;
+        color: white;
+        margin: 0 8px 0 10px;
+        padding: 2px 0 2px 10px;
+        input{
+          padding: 5px;
+          margin: 0 0 0 5px;
+        }
+        textarea{
+          min-width: 220px;
+          max-width: 90%;
+        }
+        &:last-child{
+          //line-height: 150%;
+        }
+        :global(.textareaText){
+          //line-height: 150%;
+        }
+      }
+    }
+    :global(.mainAnkName){
+      background: rgb(27 37 95);
+      width: fit-content;
+      margin: auto;
+      padding: 15px 20px 15px 20px;
+      border-radius: 0 0 8px 8px;
+    }
+    :global(.feedbackForm){
+      div{
+      }
+      :global(.questValDiv){
+        background: #1b255f;
+        padding: 5px 0 7px 25px;
+        margin: 0 5px 0 10px;
+      }
+    }
+    :global(.userdata){
+      background: adjust-hue($mainAnk-background-color, -120deg);
+    }
+    :global(.checkFailFormIn){
+      background: $failcheck-background-color!important;
+      color: whitesmoke;
+    }
+    :global(#userdataForm){
+      background: adjust-hue($failcheck-background-color, -120deg);
+    }
+    :global(.doctorAtrDiv){
+      background: #3f4b89;
+      width: fit-content;
+      margin: auto auto 40px auto;
+      border-radius: 0 0 70px 70px;
+      padding: 0 35px 0 35px;
+      text-align: center;
+    }
+    label, input, button {
+      cursor:pointer;
+    }
+    button{
+      margin: 5px;
+      padding: 5px;
+      &:hover{
+        background: rgb(172 195 234);
+        cursor: pointer;
+      }
+    }
+    label{
+      margin-right:5px;
+    }
+    :global(.radioDivQs){
+      background: #3f4b89;
+      margin: 0 10px 0 20px;
+      :global(.radioDivQ){
+        background: #3f4b89;
+        width: fit-content;
+        display: inline-block;
+        margin: 0px 2px 0px 2px;
+        &:first-child{
+          margin: 0px 2px 0px 0px;
+        }
+        &:hover{
+          cursor:pointer;
+          background: #1b255f;
+
+        }
+      }
+    }
+    :global(.error_check_msg){
+      position: fixed;
+      bottom: 0px;
+      $width: 40%;
+      width: $width;
+      text-align: center;
+      left: calc((#{100%} - #{$width})/2);
+    }
+}
+  :global(.ankVers){
+    position: fixed;
+    right:0;
+    bottom:0;
+    font-size: 0.7em;
+  }
+  :global(.send_success){
+    background: $success-background-color;
+  }
+  :global(.send_error){
+    background:$error-background-color;
+  }
+  :global(.count_reviews){
+    background: adjust-hue($body-background-color, -120deg);
+    img{
+      width:25px;
+    }
+  }
+  :global(.loadingMainScreen){
+    img{
+      width:155px;
+    }
+  }
+}
+
+@import './adaptiveGrid.scss';
